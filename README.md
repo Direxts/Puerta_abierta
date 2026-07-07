@@ -2,11 +2,11 @@
 
 ## Descripción del proyecto
 
-**Puerta Abierta** es una plataforma web creada para apoyar a emprendedores y pequeños negocios en la promoción de sus productos y servicios de manera sencilla, accesible e interactiva.
+**Puerta Abierta** es una plataforma web desarrollada para apoyar a emprendedores y pequeños negocios en la promoción de sus productos y servicios de una manera sencilla, accesible e interactiva.
 
-La plataforma permite que los usuarios se registren, inicien sesión y publiquen información relacionada con sus emprendimientos. Cada negocio puede incluir su nombre, descripción, imágenes y otros datos importantes para facilitar su promoción dentro de la página.
+La plataforma permite que los usuarios se registren, inicien sesión y publiquen información relacionada con sus emprendimientos. Cada negocio puede incluir su nombre, descripción, categoría, ubicación, imágenes y otros datos importantes para facilitar su promoción dentro de la página.
 
-Los visitantes pueden explorar los emprendimientos registrados, visualizar información detallada e interactuar con las publicaciones mediante las opciones de **“Me gusta”** y **“No me gusta”**.
+Los visitantes pueden explorar los emprendimientos registrados, consultar la información detallada de cada negocio, realizar búsquedas y reaccionar mediante las opciones de **“Me gusta”** y **“No me gusta”**.
 
 El proyecto fue desarrollado de manera individual como trabajo final de la asignatura **Gestión de Proyectos Informáticos**, aplicando principios y prácticas de **PMBOK, Scrum y Agile**.
 
@@ -14,7 +14,7 @@ El proyecto fue desarrollado de manera individual como trabajo final de la asign
 
 ## Objetivo general
 
-Desarrollar una plataforma web que facilite la promoción, visibilidad e interacción de emprendedores y pequeños negocios mediante perfiles comerciales, publicaciones e instrumentos digitales de participación.
+Desarrollar una plataforma web que facilite la promoción, visibilidad e interacción de emprendedores y pequeños negocios mediante perfiles comerciales, publicaciones y herramientas digitales de participación.
 
 ---
 
@@ -25,11 +25,13 @@ Desarrollar una plataforma web que facilite la promoción, visibilidad e interac
 - Facilitar la creación y publicación de emprendimientos.
 - Permitir la edición y eliminación de los negocios registrados.
 - Mostrar información detallada de cada emprendimiento.
+- Organizar los emprendimientos mediante categorías y zonas.
+- Permitir la búsqueda de negocios por nombre, categoría y ubicación.
 - Incorporar opciones de interacción mediante “Me gusta” y “No me gusta”.
 - Ofrecer una interfaz clara, sencilla y fácil de utilizar.
-- Almacenar la información de los usuarios y emprendimientos en una base de datos MySQL.
+- Almacenar la información mediante una base de datos MySQL.
 - Promover la visibilidad digital de pequeños negocios y proyectos emergentes.
-- Organizar el desarrollo mediante herramientas de gestión y control de versiones.
+- Utilizar Git y GitHub para el control de versiones del proyecto.
 
 ---
 
@@ -38,7 +40,9 @@ Desarrollar una plataforma web que facilite la promoción, visibilidad e interac
 La versión actual de Puerta Abierta incluye las siguientes funciones:
 
 - Registro de usuarios.
+- Validación de datos durante el registro.
 - Inicio de sesión.
+- Validación de contraseña.
 - Cierre de sesión.
 - Panel principal del usuario.
 - Creación de nuevos emprendimientos.
@@ -46,18 +50,19 @@ La versión actual de Puerta Abierta incluye las siguientes funciones:
 - Eliminación de emprendimientos.
 - Visualización del catálogo de negocios.
 - Vista detallada de cada emprendimiento.
+- Búsqueda por nombre.
+- Búsqueda por categoría.
+- Búsqueda por zona.
 - Sistema de “Me gusta”.
 - Sistema de “No me gusta”.
 - Página informativa “Nosotros”.
 - Página de contacto.
 - Conexión con una base de datos MySQL.
-- Administración de la información mediante phpMyAdmin.
+- Administración de los datos mediante phpMyAdmin.
 
 ---
 
 ## Metodologías aplicadas
-
-Para la organización y desarrollo del proyecto se utilizaron los siguientes enfoques:
 
 ### PMBOK
 
@@ -65,17 +70,19 @@ Se aplicaron buenas prácticas de PMBOK para organizar el alcance, el cronograma
 
 ### Scrum
 
-El proyecto se dividió en pequeñas etapas de trabajo para desarrollar progresivamente las funciones principales de la plataforma.
+El desarrollo se dividió en pequeñas etapas de trabajo para construir progresivamente las funciones principales de la plataforma.
+
+Aunque el proyecto fue realizado por una sola persona, se organizaron las actividades mediante tareas priorizadas y periodos de desarrollo similares a los Sprints.
 
 ### Agile
 
-Se utilizó un enfoque flexible que permitió revisar el funcionamiento del sistema, realizar correcciones y adaptar las actividades según las necesidades encontradas durante el desarrollo.
+Se utilizó un enfoque flexible que permitió revisar el funcionamiento del sistema, realizar correcciones y adaptar las actividades según las necesidades identificadas durante el desarrollo.
 
 ---
 
 ## Tecnologías utilizadas
 
-### Lenguajes de programación y desarrollo
+### Lenguajes y tecnologías de desarrollo
 
 - HTML5.
 - CSS3.
@@ -94,7 +101,7 @@ Se utilizó un enfoque flexible que permitió revisar el funcionamiento del sist
 - XAMPP.
 - Apache.
 
-### Gestión y documentación
+### Gestión, documentación y comunicación
 
 - Git.
 - GitHub.
@@ -111,6 +118,21 @@ Se utilizó un enfoque flexible que permitió revisar el funcionamiento del sist
 
 ```text
 puerta_abierta/
+│
+├── Capturas/
+│   ├── busqueda_categoria.png
+│   ├── Busqueda_nombre.png
+│   ├── busqueda_zona.png
+│   ├── Crear.png
+│   ├── dashboard.png
+│   ├── Eliminar.png
+│   ├── emprendimiento.png
+│   ├── emprendimiento_Editar.png
+│   ├── Index.png
+│   ├── registro.png
+│   ├── registro_correoreg.png
+│   ├── sesion.png
+│   └── sesion_contrase.png
 │
 ├── css/
 │   └── Archivos de estilos de la plataforma
@@ -139,16 +161,11 @@ puerta_abierta/
 └── README.md
 ```
 
-También se recomienda incluir las siguientes carpetas:
+También se recomienda incluir una carpeta para almacenar la base de datos:
 
 ```text
-puerta_abierta/
-│
-├── capturas/
-│   └── Evidencias visuales del proyecto
-│
-└── database/
-    └── puerta_abierta.sql
+database/
+└── puerta_abierta.sql
 ```
 
 ---
@@ -171,10 +188,11 @@ puerta_abierta/
 | `dislike.php` | Procesa las reacciones negativas. |
 | `nosotros.php` | Presenta información sobre el propósito de la plataforma. |
 | `contacto.php` | Contiene la sección de contacto. |
-| `includes/` | Contiene la conexión y componentes reutilizables. |
-| `css/` | Contiene los estilos visuales. |
+| `includes/` | Contiene la conexión y otros componentes reutilizables. |
+| `css/` | Contiene los estilos visuales de la plataforma. |
 | `js/` | Contiene las funciones de interactividad. |
-| `.gitignore` | Indica los archivos que no deben subirse al repositorio. |
+| `Capturas/` | Contiene las evidencias visuales del funcionamiento. |
+| `.gitignore` | Indica los archivos que Git no debe subir al repositorio. |
 | `README.md` | Contiene la documentación general del proyecto. |
 
 ---
@@ -189,7 +207,7 @@ Para ejecutar Puerta Abierta se necesita:
 - MySQL activo.
 - Navegador web.
 - Acceso a phpMyAdmin.
-- Visual Studio Code u otro editor.
+- Visual Studio Code u otro editor de código.
 - Git, en caso de clonar el repositorio.
 
 ---
@@ -200,13 +218,13 @@ Para ejecutar Puerta Abierta se necesita:
 
 El proyecto puede descargarse como archivo ZIP desde GitHub.
 
-También puede clonarse mediante Git utilizando el siguiente comando:
+También puede clonarse mediante Git:
 
 ```bash
 git clone URL_DEL_REPOSITORIO
 ```
 
-Se debe sustituir `URL_DEL_REPOSITORIO` por el enlace real del proyecto en GitHub.
+Se debe sustituir `URL_DEL_REPOSITORIO` por el enlace real del repositorio.
 
 ---
 
@@ -239,13 +257,13 @@ Ambos servicios deben aparecer activos antes de abrir la plataforma.
 
 ### 4. Abrir phpMyAdmin
 
-Desde el navegador, acceder a:
+Desde el navegador se debe acceder a:
 
 ```text
 http://localhost/phpmyadmin
 ```
 
-También puede abrirse haciendo clic en el botón **Admin** ubicado al lado de MySQL en XAMPP.
+También puede abrirse mediante el botón **Admin** ubicado al lado de MySQL en el panel de XAMPP.
 
 ---
 
@@ -261,27 +279,25 @@ puerta_abierta
 
 ### 6. Importar la base de datos
 
-Seleccionar la base de datos `puerta_abierta`.
-
-Luego:
+Después de seleccionar la base de datos `puerta_abierta`:
 
 1. Entrar en la pestaña **Importar**.
 2. Seleccionar el archivo SQL.
 3. Pulsar **Continuar**.
 
-El archivo debe colocarse preferiblemente en:
+El archivo debe estar ubicado preferiblemente en:
 
 ```text
 database/puerta_abierta.sql
 ```
 
-Este archivo debe contener las tablas y datos necesarios para ejecutar el sistema.
+Este archivo debe contener las tablas necesarias para ejecutar el sistema.
 
 ---
 
 ### 7. Configurar la conexión
 
-La configuración básica utilizada en XAMPP es:
+La configuración básica utilizada con XAMPP es:
 
 ```php
 <?php
@@ -292,19 +308,19 @@ $contrasena = "";
 $base_datos = "puerta_abierta";
 ```
 
-El archivo de conexión debe encontrarse dentro de la carpeta:
+El archivo de conexión se encuentra dentro de la carpeta:
 
 ```text
 includes/
 ```
 
-Los nombres de las variables pueden variar según la forma en que fue programada la conexión.
+Los nombres de las variables pueden variar de acuerdo con la implementación del proyecto.
 
 ---
 
 ### 8. Abrir el proyecto
 
-Como la carpeta está ubicada dentro de `Trabajo Final`, la dirección puede ser:
+Como la carpeta se encuentra dentro de `Trabajo Final`, la dirección utilizada es:
 
 ```text
 http://localhost/Trabajo%20Final/puerta_abierta/
@@ -334,13 +350,15 @@ Para utilizar Puerta Abierta se deben seguir estos pasos:
 4. Crear la cuenta.
 5. Iniciar sesión.
 6. Acceder al panel del usuario.
-7. Seleccionar la opción para agregar un emprendimiento.
+7. Seleccionar la opción para crear un emprendimiento.
 8. Completar la información del negocio.
 9. Guardar la publicación.
 10. Visualizar el emprendimiento en el catálogo.
 11. Consultar sus detalles.
-12. Editar o eliminar la publicación cuando sea necesario.
-13. Interactuar con otros negocios mediante las reacciones.
+12. Buscar negocios por nombre, categoría o zona.
+13. Editar o eliminar una publicación cuando sea necesario.
+14. Interactuar mediante las opciones de “Me gusta” y “No me gusta”.
+15. Cerrar la sesión al terminar.
 
 ---
 
@@ -349,15 +367,17 @@ Para utilizar Puerta Abierta se deben seguir estos pasos:
 La base de datos almacena información relacionada con:
 
 - Usuarios registrados.
-- Datos de acceso.
+- Credenciales de acceso.
 - Emprendimientos.
-- Descripciones de los negocios.
+- Nombres y descripciones de los negocios.
+- Categorías.
+- Zonas o ubicaciones.
 - Información de contacto.
 - Imágenes.
 - Reacciones positivas.
 - Reacciones negativas.
 
-La estructura de las tablas puede variar según la implementación desarrollada.
+La estructura exacta de las tablas puede variar según la implementación desarrollada.
 
 ---
 
@@ -365,9 +385,12 @@ La estructura de las tablas puede variar según la implementación desarrollada.
 
 El repositorio incluye un archivo `.gitignore` para evitar que se publiquen archivos temporales, configuraciones innecesarias o información privada.
 
-Ejemplo:
+Contenido recomendado:
 
 ```gitignore
+# Variables privadas
+.env
+
 # Archivos temporales
 *.log
 *.tmp
@@ -389,15 +412,12 @@ desktop.ini
 vendor/
 node_modules/
 
-# Variables privadas
-.env
-
 # Archivos comprimidos
 *.zip
 *.rar
 ```
 
-No se deben publicar contraseñas, tokens, claves privadas ni datos personales sensibles dentro del repositorio.
+No se deben publicar contraseñas, tokens, claves privadas ni información personal sensible dentro del repositorio.
 
 ---
 
@@ -408,13 +428,14 @@ El proyecto utilizó Git y GitHub para registrar los cambios realizados durante 
 Git permitió:
 
 - Crear un repositorio local.
-- Registrar las modificaciones.
+- Registrar las modificaciones realizadas.
 - Mantener un historial de versiones.
 - Recuperar versiones anteriores.
-- Guardar copias del código.
+- Conservar copias del código fuente.
 - Subir el proyecto a GitHub.
+- Evidenciar el progreso del desarrollo.
 
-Ejemplos de mensajes de commits:
+Ejemplos de mensajes utilizados en los commits:
 
 ```text
 Creación inicial del proyecto Puerta Abierta
@@ -449,7 +470,15 @@ Implementación del sistema de likes y dislikes
 ```
 
 ```text
+Implementación de búsquedas por nombre, categoría y zona
+```
+
+```text
 Corrección de la conexión con MySQL
+```
+
+```text
+Agregadas capturas y evidencias funcionales
 ```
 
 ```text
@@ -476,7 +505,7 @@ git init
 git branch -M main
 ```
 
-### Revisar los archivos
+### Revisar el estado de los archivos
 
 ```bash
 git status
@@ -494,7 +523,7 @@ git add .
 git commit -m "Creación inicial del proyecto Puerta Abierta"
 ```
 
-### Conectar con GitHub
+### Conectar el repositorio con GitHub
 
 ```bash
 git remote add origin URL_DEL_REPOSITORIO
@@ -516,85 +545,109 @@ git push
 
 ---
 
-## Capturas de pantalla
+# Capturas de pantalla
 
-Para evidenciar el funcionamiento de Puerta Abierta se recomienda crear una carpeta llamada:
+## Página principal
 
-```text
-capturas
-```
+La página principal presenta la identidad de Puerta Abierta y las opciones principales de navegación.
 
-Dentro de esta carpeta pueden almacenarse las siguientes imágenes:
+![Página principal de Puerta Abierta](Capturas/Index.png)
 
-```text
-capturas/
-│
-├── pagina-principal.png
-├── registro.png
-├── login.png
-├── dashboard.png
-├── nuevo-emprendimiento.png
-├── emprendimientos.png
-├── detalle-emprendimiento.png
-├── phpmyadmin.png
-└── repositorio-github.png
-```
+---
 
-### Página principal
+## Registro de usuarios
 
-```markdown
-![Página principal](capturas/pagina-principal.png)
-```
+Formulario utilizado para crear una nueva cuenta dentro de la plataforma.
 
-### Registro de usuarios
+![Formulario de registro](Capturas/registro.png)
 
-```markdown
-![Registro de usuarios](capturas/registro.png)
-```
+---
 
-### Inicio de sesión
+## Validación del correo durante el registro
 
-```markdown
-![Inicio de sesión](capturas/login.png)
-```
+Evidencia de la validación realizada en el formulario de registro.
 
-### Panel del usuario
+![Validación del correo](Capturas/registro_correoreg.png)
 
-```markdown
-![Panel del usuario](capturas/dashboard.png)
-```
+---
 
-### Creación de emprendimientos
+## Inicio de sesión
 
-```markdown
-![Nuevo emprendimiento](capturas/nuevo-emprendimiento.png)
-```
+Formulario utilizado para que los usuarios registrados puedan acceder al sistema.
 
-### Catálogo de emprendimientos
+![Inicio de sesión](Capturas/sesion.png)
 
-```markdown
-![Catálogo de emprendimientos](capturas/emprendimientos.png)
-```
+---
 
-### Detalles del emprendimiento
+## Validación de contraseña
 
-```markdown
-![Detalle del emprendimiento](capturas/detalle-emprendimiento.png)
-```
+Evidencia de la validación de la contraseña durante el inicio de sesión.
 
-### Base de datos
+![Validación de contraseña](Capturas/sesion_contrase.png)
 
-```markdown
-![Base de datos en phpMyAdmin](capturas/phpmyadmin.png)
-```
+---
 
-### Repositorio en GitHub
+## Panel principal del usuario
 
-```markdown
-![Repositorio en GitHub](capturas/repositorio-github.png)
-```
+El panel permite visualizar y administrar las opciones disponibles para el usuario registrado.
 
-Las imágenes deben guardarse con los mismos nombres utilizados en los enlaces para que se visualicen correctamente en GitHub.
+![Panel principal del usuario](Capturas/dashboard.png)
+
+---
+
+## Catálogo de emprendimientos
+
+Pantalla en la que se muestran los emprendimientos publicados dentro de la plataforma.
+
+![Catálogo de emprendimientos](Capturas/emprendimiento.png)
+
+---
+
+## Creación de un emprendimiento
+
+Formulario utilizado para registrar un nuevo negocio.
+
+![Creación de un emprendimiento](Capturas/Crear.png)
+
+---
+
+## Edición de un emprendimiento
+
+Pantalla utilizada para modificar la información de un emprendimiento existente.
+
+![Edición de un emprendimiento](Capturas/emprendimiento_Editar.png)
+
+---
+
+## Eliminación de un emprendimiento
+
+Evidencia del proceso utilizado para eliminar un negocio registrado.
+
+![Eliminación de un emprendimiento](Capturas/Eliminar.png)
+
+---
+
+## Búsqueda por nombre
+
+La plataforma permite localizar emprendimientos utilizando el nombre del negocio.
+
+![Búsqueda por nombre](Capturas/Busqueda_nombre.png)
+
+---
+
+## Búsqueda por categoría
+
+Los usuarios pueden filtrar los emprendimientos según la categoría a la que pertenecen.
+
+![Búsqueda por categoría](Capturas/busqueda_categoria.png)
+
+---
+
+## Búsqueda por zona
+
+La plataforma permite localizar negocios según su zona o ubicación.
+
+![Búsqueda por zona](Capturas/busqueda_zona.png)
 
 ---
 
@@ -605,16 +658,21 @@ Durante las pruebas del sistema se verificó que:
 - Apache ejecutara correctamente la plataforma.
 - MySQL se conectara con el proyecto.
 - Los usuarios pudieran registrarse.
+- Los datos del registro fueran validados.
 - Los usuarios pudieran iniciar sesión.
+- Las contraseñas fueran verificadas.
 - Las sesiones pudieran cerrarse.
 - Los emprendimientos pudieran publicarse.
 - Los negocios pudieran editarse.
 - Los emprendimientos pudieran eliminarse.
 - La información se almacenara en la base de datos.
 - Los negocios aparecieran en el catálogo.
-- La vista de detalles mostrara la información correcta.
-- Las reacciones positivas y negativas funcionaran.
-- La plataforma pudiera abrirse desde el navegador mediante XAMPP.
+- La información detallada se mostrara correctamente.
+- Las búsquedas por nombre funcionaran.
+- Las búsquedas por categoría funcionaran.
+- Las búsquedas por zona funcionaran.
+- Las reacciones positivas y negativas se registraran.
+- La plataforma pudiera abrirse mediante XAMPP y Apache.
 
 ---
 
@@ -636,13 +694,13 @@ https://youtu.be/KLl5fb7L4MU
 
 Durante el desarrollo se tomaron en cuenta recomendaciones básicas de seguridad:
 
-- Validación de los datos enviados desde los formularios.
-- Control del inicio de sesión.
+- Validación de los datos enviados mediante formularios.
+- Control del inicio y cierre de sesión.
 - Restricción del acceso a páginas privadas.
 - Protección de la conexión con la base de datos.
+- Verificación de los datos antes de almacenarlos.
 - Uso recomendado de consultas preparadas.
-- Uso recomendado de `password_hash()` para almacenar contraseñas.
-- Verificación de la información antes de guardarla.
+- Uso recomendado de `password_hash()` para proteger las contraseñas.
 - Uso de `.gitignore` para evitar la publicación de información privada.
 - Realización de copias de seguridad del código y la base de datos.
 
@@ -650,13 +708,12 @@ Durante el desarrollo se tomaron en cuenta recomendaciones básicas de seguridad
 
 ## Mejoras futuras
 
-En futuras versiones se podrán incorporar las siguientes funciones:
+En futuras versiones se podrán incorporar:
 
 - Sistema de comentarios.
 - Opciones para compartir en redes sociales.
 - Buscador avanzado.
-- Clasificación de negocios por categorías.
-- Filtros de búsqueda.
+- Filtros adicionales.
 - Planes de suscripción.
 - Publicaciones destacadas.
 - Espacios publicitarios.
@@ -683,10 +740,12 @@ El desarrollo de Puerta Abierta permitió:
 - Implementar el registro y acceso de usuarios.
 - Crear un sistema de publicación de emprendimientos.
 - Permitir la edición y eliminación de negocios.
-- Incorporar reacciones de los usuarios.
+- Incorporar búsquedas por nombre, categoría y zona.
+- Implementar reacciones de los usuarios.
 - Aplicar herramientas de gestión de proyectos.
 - Utilizar GitHub como sistema de control de versiones.
 - Documentar el proceso de instalación y ejecución.
+- Presentar evidencias visuales y funcionales del sistema.
 
 ---
 
