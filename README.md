@@ -764,7 +764,7 @@ Proyecto desarrollado individualmente por:
 Enlace del repositorio:
 
 ```text
-PEGAR_AQUÍ_EL_ENLACE_DEL_REPOSITORIO
+(https://github.com/Direxts/Puerta_abierta.git)
 ```
 
 ---
