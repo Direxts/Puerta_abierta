@@ -1,0 +1,22 @@
+# Configuraciones privadas
+.env
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+
+# Archivos de Windows
+Thumbs.db
+desktop.ini
+
+# Configuración de Visual Studio Code
+.vscode/
+
+# Dependencias
+vendor/
+node_modules/
+
+# Archivos subidos por usuarios
+uploads/*
+!uploads/.gitkeep
