@@ -549,7 +549,7 @@ git push
 
 ## Página principal
 
-La página principal presenta la identidad de Puerta Abierta y las opciones principales de navegación.
+La página principal presenta la identidad de Puerta Abierta y las principales opciones de navegación.
 
 ![Página principal de Puerta Abierta](Capturas/Index.png)
 
@@ -565,7 +565,7 @@ Formulario utilizado para crear una nueva cuenta dentro de la plataforma.
 
 ## Validación del correo durante el registro
 
-Evidencia de la validación realizada en el formulario de registro.
+Evidencia de la validación realizada al introducir el correo electrónico en el formulario de registro.
 
 ![Validación del correo](Capturas/registro_correoreg.png)
 
@@ -573,15 +573,15 @@ Evidencia de la validación realizada en el formulario de registro.
 
 ## Inicio de sesión
 
-Formulario utilizado para que los usuarios registrados puedan acceder al sistema.
+Formulario utilizado para que los usuarios registrados puedan acceder a la plataforma.
 
 ![Inicio de sesión](Capturas/sesion.png)
 
 ---
 
-## Validación de contraseña
+## Validación de la contraseña
 
-Evidencia de la validación de la contraseña durante el inicio de sesión.
+Evidencia de la validación realizada durante el inicio de sesión.
 
 ![Validación de contraseña](Capturas/sesion_contrase.png)
 
@@ -589,7 +589,7 @@ Evidencia de la validación de la contraseña durante el inicio de sesión.
 
 ## Panel principal del usuario
 
-El panel permite visualizar y administrar las opciones disponibles para el usuario registrado.
+El panel permite al usuario visualizar y administrar sus emprendimientos.
 
 ![Panel principal del usuario](Capturas/dashboard.png)
 
@@ -605,7 +605,7 @@ Pantalla en la que se muestran los emprendimientos publicados dentro de la plata
 
 ## Creación de un emprendimiento
 
-Formulario utilizado para registrar un nuevo negocio.
+Formulario utilizado para registrar un nuevo emprendimiento dentro de la plataforma.
 
 ![Creación de un emprendimiento](Capturas/Crear.png)
 
@@ -649,8 +649,7 @@ La plataforma permite localizar negocios según su zona o ubicación.
 
 ![Búsqueda por zona](Capturas/busqueda_zona.png)
 
----
-
+--------------------------------------
 ## Evidencia funcional
 
 Durante las pruebas del sistema se verificó que:
